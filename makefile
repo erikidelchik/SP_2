@@ -1,3 +1,4 @@
+all:prog
 prog: main.o mylib.a
 	gcc -o prog main.o mylib.a
 
