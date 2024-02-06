@@ -1,6 +1,6 @@
 all:connections
-prog: my_graph.o mylib.a
-	gcc -o prog main.o mylib.a
+connections: my_graph.o mylib.a
+	gcc -o connections my_graph.o mylib.a
 
 mylib.a: my_mat.o my_mat.h
 	ar -rcs mylib.a my_mat.o
@@ -14,4 +14,4 @@ my_mat.o:my_mat.c my_mat.h
 .PHONY: clean
 
 clean:
-	rm -f *.o *.a *.so prog
+	rm -f *.o *.a *.so connections
