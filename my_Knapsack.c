@@ -45,9 +45,7 @@ int selectItems(int weights[], int values[], int selected_bool[]){
 
     for(int i=0;i<LEN+1;i++){
         for(int j=0;j<MAX_WEIGHT+1;j++){
-            printf("%d ",t[i][j]);
         }
-        printf("\n");
     }
     int max_val = t[LEN][MAX_WEIGHT];
     int i=LEN;
@@ -72,4 +70,3 @@ int max(int i,int j){
     if(i>j) return i;
     return j;
 }
-
